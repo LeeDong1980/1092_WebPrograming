@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    display: block;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+}
+
+.title{
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: #5555FF;
+}
+
+.assignment{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    /* margin-right: auto; */
+    width: 10%;
+}
