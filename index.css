@@ -26,8 +26,69 @@ body{
     text-align: center;
     background-color: #5555FF;
 }
+.self{
+    /* display: ; */
+    float: left;
+    width: 50%;
+    height: auto;
+    border: 5px solid #131313;
+    border-radius: 9px;
+    margin: 10px 10px;
+    /* stroke: #131313; */
+    /* stroke-width: 10px; */
+    padding: 10px 10px 10px 10px;
+}
+.self>.self-short{
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.self>.self-short>.self-photo{
+    float: left;
+    /* display: flex; */
+    width: 33%;
+    height: auto;
+    /* border: 3px solid #aaaaaa; */
+    border-radius: 9px;
+    box-shadow: #777777 5px 5px;
+    /* margin: 5px 5px; */
+}
+.self>.self-short>.intro{
+    display: block;
+    float: right;
+    /* width: auto; */
+    width: 66%;
+    padding: 20px 5px 5px 5px;
+}
+.self>.self-short>.intro>#myName{
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+}
+.self>.self-short>.intro>.intro-short{
+    text-align: center;
+    margin: auto;
+}
+.self>.self-short>.intro>p{
+    /* text-align: left; */
+    margin: 10px 0px;
+    text-indent: 30px;
+}
+.self>.experience{
+    display: block;
+    float: left;
+    width: 50%;
+    height: auto;
+}
+.self>.experience>#intro-list{
+    margin: 10px 30px;
+}
+.self>.works{
 
+}
 .assignment{
+    display: flex;
     text-align: center;
     margin: auto;
     margin-top: 10px;
