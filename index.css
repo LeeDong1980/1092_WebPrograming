@@ -18,13 +18,14 @@ body{
 #app{
     width: 100%;
     height: 100%;
-    background-color: azure;
+    background-color: #F1F6F8;
 }
 
 .title{
     padding: 20px 0 20px 0;
     text-align: center;
-    background-color: #5555FF;
+    background-color: #485696;
+    color: #E7E7E7;
 }
 .self{
     /* display: ; */
@@ -43,6 +44,7 @@ body{
     float: left;
     width: 100%;
     height: auto;
+    padding: 10px;
 }
 .self>.self-short>.self-photo{
     float: left;
@@ -59,7 +61,8 @@ body{
     float: right;
     /* width: auto; */
     width: 66%;
-    padding: 20px 5px 5px 5px;
+    padding: 5px 5px 5px 20px;
+    
 }
 .self>.self-short>.intro>#myName{
     text-align: center;
@@ -81,17 +84,52 @@ body{
     width: 50%;
     height: auto;
 }
-.self>.experience>#intro-list{
+.section-title{
+    display: block;
+    color: #E7E7E7;
+    /* background-color: #5555FF; */
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(72,86,150,1) 5%, rgba(72,86,150,1) 70%, rgba(0,0,0,0) 100%);
+    text-indent: 20px;
+    padding: 5px;
+}
+.self>.experience>.intro-list{
     margin: 10px 30px;
 }
 .self>.works{
+    display: block;
+    float: left;
+    width: 50%;
+    height: auto;
+}
 
+.self>.works>.intro-list{
+    margin: 10px 30px;
+}
+.self>.works>.intro-list>li>a:hover{
+    background-color: #F9C784;
 }
 .assignment{
-    display: flex;
-    text-align: center;
-    margin: auto;
+    display: block;
+    float: right;
     margin-top: 10px;
-    /* margin-right: auto; */
-    width: 10%;
+    margin-right: 20px;
+    width: 45%;
+}
+.assignment>h2{
+    text-align: center;
+    margin: 20px;
+}
+table{
+    border: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+td, tr{
+    border: 1px solid black;
+    text-align: center;
+}
+td>a:hover{
+    background-color: #F9C784;
 }
