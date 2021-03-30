@@ -213,7 +213,7 @@ function ClickCardEvent(cardItem) {
 function countDownStart() {
     countDownHandler = setInterval(() => {
         counter += 1;
-        let passTimeStr ="經過時間： " + Math.floor(counter / 600) + " 分 " + counter % 600 / 10 + " 秒 ";
+        let passTimeStr ="經過時間： " + Math.floor(counter / 600) + " 分 " + Math.floor(counter % 600 / 10) + " 秒 ";
         countdown.innerHTML = passTimeStr;
     }, 100);
 }

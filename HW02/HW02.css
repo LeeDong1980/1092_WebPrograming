@@ -29,8 +29,8 @@ body{
 }
 .game{
     display: block;
-    width: 60%;
-    height: 80%;
+    width: 40%;
+    height: auto;
     margin: 0px auto;
     margin-top: 20px;
     background-color: #E7E7E7;
@@ -65,21 +65,21 @@ body{
     
     display: block;
     float: left;
-    font-size: 20px;
+    font-size: 15px;
     margin: 15px 10px;
 }
 .game>.ui>.choose{
     display: block;
     float: left;
     width: 20%;
-    font-size: 20px;
+    font-size: 15px;
     margin: 15px 10px;
 }
 .game>.ui>.choose>#select-sheet{
-    font-size: 20px;
+    font-size: 15px;
 }
 .game>.ui>.counter{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
-    margin: 0 auto;
+    margin: 15px 10px;
 }
