@@ -5,70 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeeDong Portfolio</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./HW02.css">
 </head>
 <body>
     <div id="app">
-        <h1 class="title">LeeDong Portfolio</h1>
-        <div class="self">
-            <div class="self-short">
-                <img class="self-photo" src="portfolioImg/head.png">
-                <div class="intro">
-                    <h2 id="myName">李東炳</h2>
-                    <h3 class="intro-short">I'm LeeDong, I make games.</h3>
-                    <p>我喜歡玩遊戲，接觸遊戲開發後更喜歡做出有趣酷炫的互動體驗，除Unity程式外，我也在學習Blender等2D與3D美術軟體，目標成為全端的遊戲人。目前正與團隊開發2D動作遊戲《貓蘇魯》，同時在黑洞創造擔任實習生，主要負責Unity程式與企劃撰寫。</p>
-                    
+        <h1 class="title">Homework 02</h1>
+        <div class="game">
+            <div class="card-section">
+            </div>
+            <div class="ui">
+                <button id="startBtn">開始遊戲</button>
+                <button id="stopBtn">遊戲暫停</button>
+                <button id="reStartBtn">重新開始</button>
+                <button id="hintBtn">提示</button>   
+                <div class="choose">
+                    卡片數：2 x 
+                    <select id="select-sheet">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8" selected>8</option>
+                    </select>
                 </div>
-            </div>
-            <div class="experience">
-                <h3 class="section-title">學經歷</h3>
-                <ul class="intro-list">
-                    <li>國立政治大學 廣告系</li>
-                    <li>國立政治大學 數位內容學程</li>
-                    <li>黑洞創造 互動設計組 實習生</li>
-                    <li>政大傳播學院 ITLAB 一級助理</li>
-                    <li>政大 Soobi社 Microbit講師</li>
-                    <li>Hack Muffin 2020 遊戲設計黑客鬆 總召</li>
-                </ul>
-            </div>
-            <div class="works">
-                <h3 class="section-title">參與作品</h3>
-                <ul class="intro-list">
-                    <li><a href="https://cathulhu-h5.web.app/" target="_blank">貓蘇魯(2D動作網頁遊戲)</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=gmYmAq-6isY&ab_channel=HannahHsu" target="_blank">魔神仔(台灣民俗VR恐怖遊戲)</a></li>
-                    
-                </ul>
+                <div class="counter">經過時間：</div>
             </div>
         </div>
-        <div class="assignment">
-            <h2>1092 Web程式設計</h2>
-            <table  border="1" align="center" cellspacing="0" cellpadding="0">
-                <tr>
-                    <td><b>作業</b></td>
-                    <td><b>作業連結</b></td>
-                </tr>
-                <tr>
-                    <td>HW02</td>
-                    <td><a href="javascript:;">連結點我</a></td>
-                </tr>
-                <tr>
-                    <td>HW03</td>
-                    <td><a href="javascript:;">連結點我</a></td>
-                </tr>
-                <tr>
-                    <td>HW04</td>
-                    <td><a href="javascript:;">連結點我</a></td>
-                </tr>
-                <tr>
-                    <td>HW05</td>
-                    <td><a href="javascript:;">連結點我</a></td>
-                </tr>
-                <tr>
-                    <td>HW06</td>
-                    <td><a href="javascript:;">連結點我</a></td>
-                </tr>
-        </div>
-        </table>
     </div>
 </body>
+<script src="./HW02.js"></script>
 </html>
