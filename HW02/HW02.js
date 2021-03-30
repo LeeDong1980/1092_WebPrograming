@@ -195,7 +195,7 @@ function ClickCardEvent(cardItem) {
                 selectCard1.isOpen = selectCard2.isOpen = false;
                 selectCard1 = selectCard2 = null;
                 updateCard();
-                canFlipCard = true;
+                if(!isStop) canFlipCard = true;
             }, 2500);
         } else {
             canFlipCard = false;
@@ -203,7 +203,7 @@ function ClickCardEvent(cardItem) {
             selectCard1.isCompleted = selectCard2.isCompleted = true;
             selectCard1 = selectCard2 = null;
             setTimeout(() => {
-                canFlipCard = true;
+                if(!isStop) canFlipCard = true;
             }, 500);
         }
     }
@@ -267,6 +267,7 @@ function checkWin() {
         GameState = FINISH;
         updateGameState();
         alert("You Win!");
+        clearInterval(checkWinHandler);
         // console.log("win");
     }
 }

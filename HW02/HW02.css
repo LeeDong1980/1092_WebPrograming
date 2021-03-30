@@ -56,7 +56,7 @@ body{
 .game>.ui{
     display: flex;
     overflow: hidden;
-    background-color: rgb(66, 64, 177);
+    background-color: rgb(164, 163, 216);
     width: 100%;
     float: left;
     margin: 0px auto;
