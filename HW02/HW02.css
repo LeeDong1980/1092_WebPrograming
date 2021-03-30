@@ -22,13 +22,14 @@ body{
 }
 
 .title{
-    padding: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
     text-align: center;
     background-color: #485696;
     color: #E7E7E7;
 }
 .instruction{
-    margin: 20px 30px;
+    display: block;
+    margin: 20px 20px;
     float: left;
     width: 20%;
 }
@@ -75,7 +76,7 @@ body{
     display: block;
     float: left;
     font-size: 15px;
-    margin: 15px 10px;
+    margin: 15px 7.5px;
 }
 .game>.ui>.choose{
     display: block;
@@ -90,5 +91,5 @@ body{
 .game>.ui>.counter{
     font-size: 15px;
     text-align: center;
-    margin: 15px 10px;
+    margin: 15px 5px;
 }
