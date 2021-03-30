@@ -32,7 +32,7 @@ function init() {
     });
     updateCard();
     startBtn.addEventListener("click", () => {
-        if (GameState != SETTING) { alert("遊戲尚未結束，如欲重來請按「重新開始」！"); return; }
+        if (GameState != SETTING) { alert("如欲重來請按「重置遊戲」！"); return; }
         GameState = START;
         // console.log(cardList);
         checkWinHandler = setInterval(() => {
@@ -54,6 +54,7 @@ function init() {
         gameReset();
     })
     hintBtn.addEventListener("click", () => {
+        if (isStop) return;
         hint();
     })
     selectSheet.addEventListener("change", () => {
@@ -266,8 +267,8 @@ function checkWin() {
     if (isWin) {
         GameState = FINISH;
         updateGameState();
-        alert("You Win!");
         clearInterval(checkWinHandler);
+        alert("You Win!");
         // console.log("win");
     }
 }

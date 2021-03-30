@@ -10,13 +10,22 @@
 <body>
     <div id="app">
         <h1 class="title">Homework 02</h1>
+        <div class="instruction">
+            <h3>操作說明</h3>
+            <ul>
+                <li>請按開始遊戲按鈕開始遊戲。</li>
+                <li>暫停時會停止計時，並停用翻牌操作與提示功能。</li>
+                <li>開始遊戲後無法更改卡片數，設定完成後將在下次重置遊戲時套用。</li>
+                <li>翻開兩張牌後，若兩張不相同會套用較長的翻牌CD。</li>
+            </ul>
+        </div>
         <div class="game">
             <div class="card-section">
             </div>
             <div class="ui">
                 <button id="startBtn">開始遊戲</button>
                 <button id="stopBtn">遊戲暫停</button>
-                <button id="reStartBtn">重新開始</button>
+                <button id="reStartBtn">重置遊戲</button>
                 <button id="hintBtn">提示</button>   
                 <div class="choose">
                     卡片數：2 x 
