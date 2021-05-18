@@ -20,18 +20,20 @@ function initialize() {
 }
 
 function getParkinglots() {
-  fetch('https://data.taipei/api/v1/dataset/ca5931b3-19c4-4207-abbd-cbf7bfd84187?scope=resourceAquire')
+  fetch('https://data.taipei/api/v1/dataset/42694bb8-fc9d-4d82-af7a-0ad6f4c9ad57?scope=resourceAquire')
   .then(function(response) {
     return response.json();
   })
   .then(function(myJson) {
     
     for (let index = 0; index < myJson.result.results.length; index++) {
+      
       let element = myJson.result.results[index];
-      let lat = element["經度(WGS84)"];
-      let lng = element["緯度(WGS84)"];
+      let lat = element["經度"];
+      let lng = element["緯度"];
       let name = element["停車場名稱"];
- 
+      // {"停車場名稱":"捷運劍南路站轉乘停車場","_id":1,"項次":"1","經度":"121.5544513","緯度":"25.0845396"}
+      console.log(lat, lng, name);
       addParkinglotMarker(lat, lng, name);
       
     }
